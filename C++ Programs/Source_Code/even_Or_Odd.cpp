@@ -13,10 +13,10 @@ int main()
 	cout << "Enter the Largest Number among the two :- " << endl;
 	cin >> input2;
 	cout << "Your input is = " << input2 << endl << endl;
-	cout << "Which series you wanna print ? Even or Odd {Press E (in capital) for Even or O (in capital) for Odd}" << endl;
+	cout << "Which series you wanna print ?\nEven or Odd {Press E for Even or O for Odd}" << endl;
 	cin >> choose;
 	cout << "Your input is = " << choose << endl << endl;
-	if (choose == 'E' )
+	if (choose == 'E' || choose == 'e' )
 	{
 		if (input1 % 2 == 0)
 		{
@@ -34,10 +34,10 @@ int main()
 			{
 				cout << input1 + 1 << endl;
 				input1 = input1 + 2;
-			}	
+			}
 		}
 	}
-	else if (choose == 'O' )
+	else if (choose == 'O' || choose == 'o')
 	{
 		if (input1 % 2 == 0)
 		{
@@ -55,7 +55,7 @@ int main()
 			{
 				cout << input1 + 2 << endl;
 				input1 = input1 + 2;
-			}	
+			}
 		}
 	}
 	else
