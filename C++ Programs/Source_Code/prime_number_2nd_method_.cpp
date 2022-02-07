@@ -11,25 +11,41 @@ int main()
     cin >> input;
     cout << "Your Input is : " << input<<endl;
     
-    while  (i < input)
+    if (input < 0)
     {
-        
-        if ( input % i == 0 )
+        cout <<"Negative Numbers are not prime";
+    }
+    
+    else if (input==0)
+    {
+            cout <<"0 is Neither prime nor composite";
+    }
+
+    else if(input==1)
+    {
+        cout <<"1 is Neither prime nor composite";
+    }
+
+    else 
+    {
+        while  (i < input)
         {
-            a = 0;
-            break;
-        }
+            if(input % i == 0)
+            {
+                a = 0;
+                break;
+            }
         i++;
-    }
+        }
 
-    if ( a== 0)
-    {
-        cout <<input<< " is Not Prime\n";
+        if ( a == 0)
+        {
+            cout << input << " is Not Prime";
+        }
+        else
+        {
+         cout << input <<" is Prime";
+        }
     }
-    else
-    {
-        cout << input<<" is Prime\n";
-    }
-
 return 0; 
 }
