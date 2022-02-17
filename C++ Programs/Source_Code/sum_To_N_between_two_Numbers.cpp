@@ -13,9 +13,9 @@ int main()
 	cout << "Enter the largest number among the two :-\n";
 	cin >> input2;
 	cout << "Your input is : " << input2 << endl;
-	cout << "CHOOSE IF BOTH GIVEN INPUTS WILL BE INCLUSIVE OR EXCLUSIVE IN THE SUM AND PRESS Y FOR INCLUSIVE AND N FOR EXCLUSIVE\n";
+	cout << "CHOOSE IF BOTH GIVEN INPUTS WILL BE INCLUSIVE OR EXCLUSIVE IN THE SUM AND PRESS I FOR INCLUSIVE AND E FOR EXCLUSIVE\n";
 	cin >> choose;
-	if ( choose == 'Y' || choose == 'y')
+	if ( choose == 'I' || choose == 'i')
 	{
 	cout << "You chosen both the provided inputs to be INCLUSIVE in the SUM\n";
 		while (input1 <= input2)
@@ -25,7 +25,7 @@ int main()
 		}
 		cout << "The SUM is : "<< sum << endl;
 	}
-	else if ( choose == 'N' || choose == 'n' )
+	else if ( choose == 'E' || choose == 'e' )
 	{
 	cout << "You chosen both the provided inputs to be EXCLUSIVE in the SUM\n";
 		while (input1 < input2 - 1)
