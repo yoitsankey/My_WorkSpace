@@ -3,22 +3,27 @@ using namespace std;
 int main()
 {
     char input;
+    cout << "**************************************\n";
+    cout << "Uppercase, Lowercase and Numeric Teller\n";
+    cout << "**************************************\n";
+    cout << "Enter the Input\n";
     cin >> input;
+    cout << "Your input is : " << input;
     if (input >= '0' && input <= '9')
         {
-            cout << "This is Numeric";
+            cout << "\nThis is Numeric";
         }
     else if (input >= 'A' && input <= 'Z')
         {
-            cout << "This is Upper Case";
+            cout << "\nThis is Upper Case";
         }
     else if (input>='a' && input <= 'z')
         {
-            cout << "This is Lower Case";
+            cout << "\nThis is Lower Case";
         }
     else
         {
-            cout << "Invalid Input";
+            cout << "\nInvalid Input";
         }
     return 0;
 }
