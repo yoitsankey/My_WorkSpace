@@ -1,3 +1,5 @@
+// Program to Print even numbers between 1 and the Nth number provided by the user
+// Method 2
 #include <iostream>
 
 using namespace std;
