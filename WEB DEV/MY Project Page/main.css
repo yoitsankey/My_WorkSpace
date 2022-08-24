@@ -1,0 +1,10 @@
+:root{
+    background: #000;
+    font-family: "Roboto Mono";
+    color: white;
+}
+.title{
+    color: white;
+    font-size: 110px;
+    font-weight: bold;
+}

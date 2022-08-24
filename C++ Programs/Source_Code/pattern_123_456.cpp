@@ -25,4 +25,5 @@ int main()
         cout << endl;
         row++;
     }
+return 0;
 }

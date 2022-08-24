@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int input, row;
+    int input, row =1;
     cout<<"*****************************************************************"<< endl;
     cout<<"Enter the value of n where n = number of rows = number of columns"<<endl;
     cout<<"*****************************************************************"<<endl;
