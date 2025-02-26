@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Subdomain Takeover</title>
+</head><body><br/>
+<img src="image 5.png" width="632" height="300" /><br/>
+<img src="image.png" width="552" height="200" /><br/>
+<img src="image 3.png" width="959" height="250" /><img src="image 4.png" width="568" height="150" /><ul><li>can-i-takeover-xyz github - lists all services that are vulnerable to subdomain takeover - <a href="https://github.com/EdOverflow/can-i-take-over-xyz/issues/26">List of specific sub-domains seen as CNAMEs · Issue #26 · EdOverflow/can-i-take-over-xyz (github.com)</a>, <a href="https://github.com/EdOverflow/can-i-take-over-xyz/">EdOverflow/can-i-take-over-xyz: Can I take over XYZ? — a list of services and how to claim (sub)domains with dangling DNS records. (github.com)</a>&nbsp; </li>
+<li>to check cname record of a domain - <b>dig subdomain.domain.com - nslookup subdomain.domain.com</b></li>
+<li><a href="https://hackerone.com/reports/294201">Semrush | Report #294201 - subdomain takeover at news-static.semrush.com | HackerOne</a>&nbsp; - Read this report for more Inforrmation</li>
+<li>tools to find subdomain takeover:-</li>
+<li style="list-style-type: none"><ul><li>subzy github</li>
+<li>subjack github</li>
+<li>subover github (discontinued) </li>
+<li>Nuclei (BEST) - - <b>nuclei -l subdomain.txt -t /path-to-template-folder -v - </b>(nuclei path is .local)</li>
+<li style="list-style-type: none"><ul><li>nuclei uses various templates to run.</li>
+<li>we can use subdomain takeover template - <a href="https://github.com/projectdiscovery/nuclei-templates/blob/8b2bc8ab8ef801d4342bb4ec4fedb5460296da29/subdomain-takeover/detect-all-takeovers.yaml">nuclei-templates/subdomain-takeover/detect-all-takeovers.yaml at 8b2bc8ab8ef801d4342bb4ec4fedb5460296da29 · projectdiscovery/nuclei-templates (github.com)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</body></html>

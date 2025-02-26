@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Severity 3 - Sensitive Data Exposure</title>
+</head><body><ul><li>Webapp accidentally gives sensitive data that is often directly linked to customers (e.g. names, dates-of-birth, financial information, etc)</li>
+<li>At more complex levels this often involves techniques such as a "Man in The Middle Attack" - Non encrypted or weakly encrypted data can be intercepted leading to sensitive data exposure</li>
+</ul>
+<br/>
+<b>Sensitive Data Exposure (Supporting Material 1)</b><ul><li>Databases can be set up on dedicated servers, running a database service such as MySQL or MariaDB</li>
+<li>But databases can also be stored as files and are referred as "flat-file" databases, as they are stored as a single file on the computer.</li>
+<li>If a Flat-file database is stored in a folder that a user can access after connecting to a website (i.e., flat-file database is stored in root directory of the website) then that database file is exposed to the user and it means there is sensitive data exposure.</li>
+<li>The most common format of flat-file database is an <b>sqlite</b>&nbsp;database and it can be queried using <b>sqlite3</b>&nbsp;program.</li>
+</ul>
+<br/>
+<b><br/>
+</b></body></html>

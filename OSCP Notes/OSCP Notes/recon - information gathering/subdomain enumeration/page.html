@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Subdomain Enumeration</title>
+</head><body>- step 1 - Gathering info and intel about horizontal subdomains and their IP blocks<br/>
+- step 2 - Now find vertical subdomains - Scope increses with the innermost subdomains (sub-sub subdomain) and more numbers of submains.<br/>
+- step 3 - remove duplicate entries.<br/>
+- step 4 - web server fingerprinting - filter and sort out the live subdomains.<br/>
+- step 5 - take screenshots of each live subdomains.<br/>
+- step 6 - analyze the screnshots for possible vulnerabilty<br/>
+- step 7 - do a directory bruteforce for sensitive files<br/>
+- step 8 - Js file analysis<br/>
+- step 9 - github recon<br/>
+- <br/>
+<br/>
+- crt.sh, virus total, netcraft dns, - Manual subdomain search<br/>
+- **chaos.projectdiscovery.io - gives latest updated list of horizontal and vertical subdomains<br/>
+- amass - can also be used to find subdomains - need to configure the datasources.yaml in .config amass<br/>
+- subfinder - <b>subfinder -d target.com -o output_filename.txt -v</b>&nbsp;- creating automated list by ourselves using kali tools <ul><li><b>cat output<span style="font-size: 8pt">_</span>filename.txt | wc -l = </b>gives total number of items in a text list.</li>
+<li><b>sort output_filename.txt | uniq -d = </b>gives a list of duplicates</li>
+<li><b>sort output_filename.txt | uniq &gt; duplicates_removed_newfile.txt = </b>Removed duplicates, <b>anew tool - cat list1.txt list2.txt | anew &gt; combinedlist.txt -</b>&nbsp;can also be used to remove duplicates and combine two text lists.</li>
+</ul>
+<br/>
+- other tools to find subdomains - ffuf (needs wordlist - subdomain wordlist seclist, n0kovo wordlist, assetnote wordlist), chaos client github (projectdiscovery=API key)<br/>
+- Use multiple tools to make multiple lists and then combine that list and remove duplicates.<br/>
+<br/>
+- httpx tookit/httpprobe, sublister - to find live servers<br/>
+- Eyewitness for screenshotting <br/>
+</body></html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>title</key><string>Severity 10 - Insufficient Logging and Monitoring</string>
+  <key>nodeid</key><string>fd3d4056-83ae-49c3-86f8-e62cc93d6ecd</string>
+  <key>modified_time</key><integer>1711102834</integer>
+  <key>version</key><integer>6</integer>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1711102834</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>order</key><integer>11</integer>
+  <key>info_sort</key><string>order</string>
+</dict>
+</node>

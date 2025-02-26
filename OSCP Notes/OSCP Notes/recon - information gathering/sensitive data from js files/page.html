@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sensitive Data from JS Files</title>
+</head><body><ul><li>JavaScript File Analysis for Secret Informations/leakage</li>
+<li style="list-style-type: none"><ul><li>Find a target - domain</li>
+<li>FInd all the possible subdomains and other links from the target</li>
+<li>Filter and Sort Js URLs using <b>subjs</b></li>
+<li>Find Secret keywords and their parameters in js links using tools</li>
+<li>Tools - katana, subjs, getjs, secretfinder, mantra</li>
+</ul>
+</li>
+</ul>
+- subfinder<br/>
+- httpx<br/>
+- subjs, GetJS - <br/>
+- katana - can find other url and JS files in a domain - For js files - <b>katana -list final_live_list.txt -jc -o final_js_list - </b>later on we can use grep to filter<b>&nbsp;.js </b>files using<b>&nbsp;cat list.txt | grep ".js$" &gt; final.txt<br/>
+</b><b>- secret finder github - </b>used to find secrets in<b>&nbsp;JS </b>files - <b>cat katana_js_files.txt | while read url; do python3 /Path_to_SecretFinder.py -i $url -o cli &gt; secrets.txt; done<br/>
+</b><b>- </b>can also use <b>nuclei</b>&nbsp;for <b>JS</b>&nbsp;analysis<br/>
+- <b>mantra - </b>this tool is also used to hunt down API key leaks in JS files and pages<b><br/>
+</b><b>- </b>&nbsp;we can also look for comments in web pages<br/>
+<br/>
+<img src="image 2.png" /><br/>
+<br/>
+- <b>BurpJSLinkFinder (extension)</b>&nbsp;can be used to find hidden links (url) from a JS files<br/>
+<img src="image.png" /></body></html>
