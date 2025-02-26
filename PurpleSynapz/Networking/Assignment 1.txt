@@ -1,0 +1,13 @@
+I would personally approach this issue by following steps:-
+STEP 1:- Check the physical link i.e, fiber/ethernet/coaxial cable that is connected to the development team
+STEP 2:- Then i would check the NIC at both ends whether it is working as intended or not. We would also check if the intermediate switches, routers and the main ISP router is powered on and is functioning properly
+STEP 3:- If Cable and NIC are working properly then the lights in the ethernet port will glow. Hence, we cross checked that there are no issues at Layer 1 and Layer 2.
+STEP 4:- Now we will troubleshoot the IP address whether the IP address is properly configured on the developer's machine or not along with proper subnet mask.
+STEP 5:- Along with the IP address i will also cross check if the default gateway along with DNS Server is configured properly or not.
+STEP 6:- And if there is a DHCP server in the network the we will cross verify that whether if the DHCP server is turned on and is configured properly to use correct IP pool for development team.
+STEP 7:- At last we would check and make sure that the firewall is not blocking the outbound traffic in order to fix the connectivity issue.
+
+By using above steps we can fix our internet connection issue.
+
+If issue still persists then we can use Wireshark in order to capture and inspect the packets on the development team's machine which can give us more information like what process is causing the non reachability of internet such as whether the DORA process during DHCP is failing for any reason (reasons can include non-IP assignment or non-working DNS IP assignment to the host) or is there something wrong with ARP resolution, DNS resolution etc..
+Additionally for security we can check proper VLAN configuration also.
