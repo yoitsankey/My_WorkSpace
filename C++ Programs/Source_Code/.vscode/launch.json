@@ -7,13 +7,11 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "cwd": "c:/Users/Ankit Raj/Desktop/Linux_WorkSpace/C++ Programs/Source_Code",
-      "environment": [],
-      "program": "c:/Users/Ankit Raj/Desktop/Linux_WorkSpace/C++ Programs/Source_Code/build/Debug/outDebug",
-      "internalConsoleOptions": "openOnSessionStart",
+      "externalConsole": true,
+      "cwd": "d:/My_WorkSpace/C++ Programs/Source_Code",
+      "program": "d:/My_WorkSpace/C++ Programs/Source_Code/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe",
-      "console": "integratedTerminal",
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",
